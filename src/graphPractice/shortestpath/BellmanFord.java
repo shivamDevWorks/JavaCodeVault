@@ -7,6 +7,7 @@ import java.util.Arrays;
 
 public class BellmanFord {
 
+    // considering no negative weight cycle
     public int[] singleSourceShortestPath(ArrayList<Triplet> edges, int src,int V){
         int dist[]=new int[V];
         Arrays.fill(dist,Integer.MAX_VALUE);
